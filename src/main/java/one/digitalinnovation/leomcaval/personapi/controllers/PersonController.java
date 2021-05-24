@@ -3,6 +3,7 @@ package one.digitalinnovation.leomcaval.personapi.controllers;
 import one.digitalinnovation.leomcaval.personapi.dto.request.PersonDTO;
 import one.digitalinnovation.leomcaval.personapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.leomcaval.personapi.entities.Person;
+import one.digitalinnovation.leomcaval.personapi.exception.PersonNotFoundException;
 import one.digitalinnovation.leomcaval.personapi.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,6 +32,11 @@ public class PersonController {
     @GetMapping
     public List<PersonDTO> listAll() {
         return personService.listAll();
+    }
+
+    @GetMapping("/{id}")
+    public PersonDTO findByID(@PathVariable Long id) throws PersonNotFoundException {
+        return personService.findById(id);
     }
 
 
