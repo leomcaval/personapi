@@ -1,4 +1,4 @@
-# Construindo uma API Rest de consulta de cidades do Brasil do zero até a produção
+# Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot
 
 
 
