@@ -27,4 +27,4 @@ Aprendi a implementar uma API Rest para cadastro e gerenciamento de pessoas de u
 
 ### Deployment no Heroku
 
-https://peopleapileomcaval-live.herokuapp.com/
+https://personapileomcaval.herokuapp.com
